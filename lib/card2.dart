@@ -21,11 +21,7 @@ class Card2 extends StatelessWidget {
         ),
         child: Column(
           children: [
-            const AuthorCard(
-              authorName: 'Muhammad Yousif',
-              title: 'Smoothie Connoisseur',
-              imageProvider: AssetImage('assets/222.png'),
-            ),
+            const AuthorCard(authorName: 'Muhammad Yousif', title: 'Smoothie Connoisseur', imageProvider: AssetImage('assets/222.png')),
             Expanded(
               child: Stack(
                 children: [
