@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fooderlich/fooderlich_theme.dart';
 
 import 'circle_image.dart';
-import 'fooderlich_theme.dart';
 
 class AuthorCard extends StatefulWidget {
   final String title;
@@ -32,8 +32,8 @@ class _AuthorCardState extends State<AuthorCard> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(widget.authorName, style: FooderlichTheme.lightTextTheme.headline2),
-                  Text(widget.title, style: FooderlichTheme.lightTextTheme.headline3),
+                  Text(widget.authorName, style: FooderlichTheme.darkTextTheme.headline2),
+                  Text(widget.title, style: FooderlichTheme.darkTextTheme.headline3),
                 ],
               ),
             ],

@@ -3,75 +3,29 @@ import 'package:google_fonts/google_fonts.dart';
 
 class FooderlichTheme {
   static TextTheme lightTextTheme = TextTheme(
-    bodyText1: GoogleFonts.openSans(
-      fontSize: 14.0,
-      fontWeight: FontWeight.w700,
-      color: Colors.black,
-    ),
-    headline1: GoogleFonts.openSans(
-      fontSize: 32.0,
-      fontWeight: FontWeight.bold,
-      color: Colors.black,
-    ),
-    headline2: GoogleFonts.openSans(
-      fontSize: 21.0,
-      fontWeight: FontWeight.w700,
-      color: Colors.black,
-    ),
-    headline3: GoogleFonts.openSans(
-      fontSize: 16.0,
-      fontWeight: FontWeight.w600,
-      color: Colors.black,
-    ),
-    headline6: GoogleFonts.openSans(
-      fontSize: 20.0,
-      fontWeight: FontWeight.w600,
-      color: Colors.black,
-    ),
+    bodyText1: GoogleFonts.tajawal(fontSize: 14.0, fontWeight: FontWeight.w700, color: Colors.black),
+    bodyText2: GoogleFonts.tajawal(fontSize: 14.0, fontWeight: FontWeight.w700, color: Colors.black),
+    headline1: GoogleFonts.tajawal(fontSize: 32.0, fontWeight: FontWeight.bold, color: Colors.black),
+    headline2: GoogleFonts.tajawal(fontSize: 21.0, fontWeight: FontWeight.w700, color: Colors.black),
+    headline3: GoogleFonts.tajawal(fontSize: 16.0, fontWeight: FontWeight.w600, color: Colors.black),
+    headline6: GoogleFonts.tajawal(fontSize: 20.0, fontWeight: FontWeight.w600, color: Colors.black),
   );
 
   static TextTheme darkTextTheme = TextTheme(
-    bodyText1: GoogleFonts.openSans(
-      fontSize: 14.0,
-      fontWeight: FontWeight.w700,
-      color: Colors.white,
-    ),
-    headline1: GoogleFonts.openSans(
-      fontSize: 32.0,
-      fontWeight: FontWeight.bold,
-      color: Colors.white,
-    ),
-    headline2: GoogleFonts.openSans(
-      fontSize: 21.0,
-      fontWeight: FontWeight.w700,
-      color: Colors.white,
-    ),
-    headline3: GoogleFonts.openSans(
-      fontSize: 16.0,
-      fontWeight: FontWeight.w600,
-      color: Colors.white,
-    ),
-    headline6: GoogleFonts.openSans(
-      fontSize: 20.0,
-      fontWeight: FontWeight.w600,
-      color: Colors.white,
-    ),
+    bodyText1: GoogleFonts.tajawal(fontSize: 14.0, fontWeight: FontWeight.w700, color: Colors.white),
+    bodyText2: GoogleFonts.tajawal(fontSize: 14.0, fontWeight: FontWeight.w700, color: Colors.white),
+    headline1: GoogleFonts.tajawal(fontSize: 32.0, fontWeight: FontWeight.bold, color: Colors.white),
+    headline2: GoogleFonts.tajawal(fontSize: 21.0, fontWeight: FontWeight.w700, color: Colors.white),
+    headline3: GoogleFonts.tajawal(fontSize: 16.0, fontWeight: FontWeight.w600, color: Colors.white),
+    headline6: GoogleFonts.tajawal(fontSize: 20.0, fontWeight: FontWeight.w600, color: Colors.white),
   );
 
   static ThemeData light() {
     return ThemeData(
       brightness: Brightness.light,
-      checkboxTheme: CheckboxThemeData(
-        fillColor: MaterialStateColor.resolveWith(
-              (states) {
-            return Colors.black;
-          },
-        ),
-      ),
-      appBarTheme: const AppBarTheme(
-        foregroundColor: Colors.black,
-        backgroundColor: Colors.white,
-      ),
+      primarySwatch: Colors.green,
+      checkboxTheme: CheckboxThemeData(fillColor: MaterialStateColor.resolveWith((states) => Colors.black)),
+      appBarTheme: const AppBarTheme(foregroundColor: Colors.black, backgroundColor: Colors.white),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
         foregroundColor: Colors.white,
         backgroundColor: Colors.black,
@@ -86,10 +40,8 @@ class FooderlichTheme {
   static ThemeData dark() {
     return ThemeData(
       brightness: Brightness.dark,
-      appBarTheme: AppBarTheme(
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.grey[900],
-      ),
+      primarySwatch: Colors.green,
+      appBarTheme: AppBarTheme(foregroundColor: Colors.white, backgroundColor: Colors.grey[900]),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
         foregroundColor: Colors.white,
         backgroundColor: Colors.green,

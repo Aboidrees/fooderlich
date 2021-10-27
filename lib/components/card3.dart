@@ -1,17 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fooderlich/fooderlich_theme.dart';
+import 'package:fooderlich/models/explore_recipe.dart';
 
 class Card3 extends StatelessWidget {
-  const Card3({Key? key}) : super(key: key);
+  const Card3({Key? key, required ExploreRecipe recipe}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        constraints: const BoxConstraints.expand(width: 350.0, height: 450.0),
+        constraints: const BoxConstraints.expand(width: 350.0, height: 400.0),
         decoration: const BoxDecoration(
-          image: DecorationImage(image: AssetImage('assets/mag2.png'), fit: BoxFit.cover),
+          image: DecorationImage(image: AssetImage('assets/magazine_pics/mag2.png'), fit: BoxFit.cover),
           borderRadius: BorderRadius.all(Radius.circular(10.0)),
         ),
         child: Stack(

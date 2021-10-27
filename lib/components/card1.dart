@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fooderlich/fooderlich_theme.dart';
+import 'package:fooderlich/models/explore_recipe.dart';
 
 class Card1 extends StatelessWidget {
-  const Card1({Key? key}) : super(key: key);
+  const Card1({Key? key, required ExploreRecipe recipe}) : super(key: key);
 
   final String category = 'Editor\'s Choice';
   final String title = 'The Art of Dough';
@@ -14,10 +15,10 @@ class Card1 extends StatelessWidget {
     return Center(
       child: Container(
         padding: const EdgeInsets.all(16.0),
-        constraints: const BoxConstraints.expand(width: 350.0, height: 450.0),
+        constraints: const BoxConstraints.expand(width: 350.0, height: 400.0),
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/mag1.png'),
+            image: AssetImage('assets/magazine_pics/mag1.png'),
             fit: BoxFit.cover,
           ),
           borderRadius: BorderRadius.all(Radius.circular(10.0)),
